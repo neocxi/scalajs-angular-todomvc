@@ -70,6 +70,7 @@ object TodoCtrl extends Controller {
 
   @JSExport
   def add() {
+    js.debugger()
     val title = scope.newTitle.trim
     if (title != "") add(Task(title), scope)
   }
